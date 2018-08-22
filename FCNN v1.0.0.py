@@ -9,7 +9,7 @@ Created on Wed Jul 18 11:38:07 2018
 import numpy as np
 
 
-"Layer class: Used by the Neural_Network class to create new layers for the Neural Network"
+"""Layer class: Used by the Neural_Network class to create new layers for the Neural Network"""
 
 class layer(object):
 
@@ -90,7 +90,7 @@ class layer(object):
 #End    
     
 
-"Final Layer class: Used by the Neural_Network class to create final layer for the Neural Network"
+"""Final Layer class: Used by the Neural_Network class to create final layer for the Neural Network"""
     
 class finalLayer(object):
 
@@ -208,7 +208,7 @@ class finalLayer(object):
         
 
 
-"Main Controller class which creates the entire Neural Network based on the parameters given by the user"
+"""Main Controller class which creates the entire Neural Network based on the parameters given by the user"""
 
 class Neural_Network(layer, finalLayer):
     
