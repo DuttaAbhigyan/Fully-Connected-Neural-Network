@@ -1,0 +1,21 @@
+FCNN v1.0.0  ---> First Prototype with the following features:
+
+Functionalities:
+=> Classification
+
+Activation Functions:
+=> Sigmoid
+=> ReLu
+=> Leaky ReLu
+
+Optimisers:
+=> Gradient descent
+
+
+
+FCNN v1.0.5
+
+=> Added accuracy function
+=> Lots of bug fixes
+=> Better documentation
+
