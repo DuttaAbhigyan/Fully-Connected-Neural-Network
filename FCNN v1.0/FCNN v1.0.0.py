@@ -293,8 +293,3 @@ class Neural_Network(layer, finalLayer):
                 
 #End
             
-
-        
-        
-      
-    
