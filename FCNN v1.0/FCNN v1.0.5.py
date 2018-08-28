@@ -326,10 +326,5 @@ class Neural_Network(layer, finalLayer):
         self.accuracyMatrix.astype(dtype = np.int32)
         print(np.sum(self.accuracyMatrix))
 #End
-            
-
-nn = Neural_Network(2, [10,3], ['relu', 'sigmoid'], errorFunction = 'cross_entropy', learningRate = 0.001) 
-nn.initializeNN(idr.data, idr.labels, 10000)
-nn.run_Neural_Network()        
-      
+                         
     
