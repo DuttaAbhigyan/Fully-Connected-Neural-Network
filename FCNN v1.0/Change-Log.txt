@@ -19,3 +19,14 @@ FCNN v1.0.5
 => Lots of bug fixes
 => Better documentation
 
+
+FCNN v1.0.9
+
+=> Added 'tanh', 'hard sigmoid', 'elu' activations
+=> Added 'softmax' output
+=> Added Backpropagation with Momentum optimizer
+=> Added F_score score calculator
+=> General bug fixes
+
+
+
