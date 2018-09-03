@@ -5,10 +5,9 @@ Created on Sat Sep  1 21:45:11 2018
 
 @author: abhigyan
 """
+("""UNSTABLE VERSION""")
 
 import numpy as np
-import irisDataReader as idr
-
 
 #Default Parameters
 
@@ -478,11 +477,4 @@ class Neural_Network(layer, finalLayer):
         
 #End
             
-
-nn = Neural_Network(2, [10,3], ['tanh', 'softmax'], errorFunction = 'cross_entropy', learningRate = 0.001, 
-                    optimizer = 'GradientDescent')
-#dat = np.array([[1,1], [1,0], [0,1], [0,0]])
-#res = np.array([[0], [1], [1], [0]]) 
-nn.initializeNN(idr.data, idr.labels, 10)
-nn.run_Neural_Network()  
     
