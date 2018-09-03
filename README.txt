@@ -7,6 +7,14 @@ Activation Functions:
 => Sigmoid
 => ReLu
 => Leaky ReLu
+=> Tanh
+=> Hard Sigmoid
+=> Elu
 
 Optimisers:
 => Gradient descent
+=> Gradient Descent with Momentum
+
+Score functions:
+=> Accuracy
+=> F_score
