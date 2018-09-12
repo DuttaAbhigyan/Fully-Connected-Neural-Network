@@ -1,0 +1,5 @@
+Versions 2.0 will have a more modularized approach, where users will easily be able to create their own activation functions,
+and define new cost functions and optimizers. Also the defaulr Neural Net will support many more activations, cost functions,
+performance paramters, and new functionality regression.
+
+Version 3.0 will feature the GUI version running on the underlying code written in NumPy.
