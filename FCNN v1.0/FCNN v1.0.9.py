@@ -5,7 +5,6 @@ Created on Sat Sep  1 21:45:11 2018
 
 @author: abhigyan
 """
-("""UNSTABLE VERSION""")
 
 import numpy as np
 
