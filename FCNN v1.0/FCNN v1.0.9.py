@@ -426,9 +426,11 @@ class Neural_Network(layer, finalLayer):
             self.NNlayers[i].maintainGradientHistory()
             
             
-    #Score functions        
+    #Score functions accuracy and F_score
+    
     def accuracy_calculator(self):
         self.hypothesis = self.NNlayers[-1].getResult()
+        
         if(self.NNlayers[-1].getActivation() == 'sigmoid' and self.nodes[-1] == 1):
             self.accuracyMatrix = np.round(self.hypothesis) == self.targets
             self.accuracyMatrix = self.accuracyMatrix.astype(dtype = np.int32)
@@ -440,15 +442,18 @@ class Neural_Network(layer, finalLayer):
             self.accuracy = np.sum(self.accuracyMatrix) / len(self.targets)
             print(self.accuracy)
             
+            
     def calculatePrecision(self, predictions, target):
         TP = np.sum(predictions & target)
         FP = np.sum(predictions & np.abs(target - 1))
         return TP/(TP+FP)
     
+    
     def calculateRecall(self, predictions, target):
         TP = np.sum(predictions & target)
         FN = np.sum(np.abs(predictions - 1) & target)
         return TP/(TP+FN)
+    
         
     def F_Score_calculator(self, averaging ='macro'):       #For more info check out https://sebastianraschka.com/faq/docs/multiclass-metric.html
         self.hypothesis = self.NNlayers[-1].getResult()
